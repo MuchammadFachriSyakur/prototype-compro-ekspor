@@ -1,437 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- SEO Meta Tags -->
-  <title>PT Lancar Barokah Manfaat - Exporter of Coffee, Cloves & Charcoal from Indonesia</title>
-  <meta name="description" content="PT Lancar Barokah Manfaat is an Indonesian export company specializing in coffee, cloves, coconut charcoal briquettes, and spices. Trusted by global buyers.">
-  <meta name="keywords" content="Indonesia export coffee, cloves exporter, charcoal briquettes supplier, agricultural products export Indonesia, PT Lancar Barokah Manfaat">
-  <meta name="author" content="PT Lancar Barokah Manfaat">
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      PT Lancar Barokah Manfaat — Exporter of Coffee, Cloves & Charcoal
+    </title>
+    <meta
+      name="description"
+      content="PT Lancar Barokah Manfaat is an Indonesian export company specializing in coffee, cloves, coconut charcoal briquettes, and spices. Trusted by global buyers."
+    />
+    <meta
+      name="keywords"
+      content="Indonesia export coffee, cloves exporter, charcoal briquettes supplier, agricultural products export Indonesia, PT Lancar Barokah Manfaat"
+    />
+    <meta name="author" content="PT Lancar Barokah Manfaat" />
 
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PT Lancar Barokah Manfaat - Indonesian Exporter">
-  <meta property="og:description" content="Exporting premium coffee, cloves, charcoal briquettes & spices to global markets.">
-  <meta property="og:image" content="assets/logo.jpg">
-  <meta property="og:url" content="https://ptlancarbarokahmanfaat.com">
-  <meta property="og:type" content="website">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PT Lancar Barokah Manfaat - Export Company">
-  <meta name="twitter:description" content="Indonesian exporter of coffee, cloves, charcoal briquettes & spices.">
-  <meta name="twitter:image" content="assets/logo.jpg">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://ptlancarbarokahmanfaat.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --gold: #d4af37;
-      --dark-bg: #111;
-      --light-bg: #faf9f4;
-      --dark-text: #eee;
-      --light-text: #222;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: var(--light-bg);
-      color: var(--light-text);
-      transition: background 0.3s, color 0.3s;
-    }
-    body.dark {
-      background: var(--dark-bg);
-      color: var(--dark-text);
-    }
-
-    /* Header & Navbar */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background: rgba(250, 249, 244, 0.9);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(6px);
-    }
-    body.dark header {
-      background: rgba(17, 17, 17, 0.9);
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      color: var(--gold);
-      font-size: 1.4rem;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: 500;
-      color: inherit;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: var(--gold);
-    }
-
-    /* Toggle Switch */
-    .controls {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .toggle {
-      width: 50px;
-      height: 25px;
-      border-radius: 25px;
-      background: var(--gold);
-      position: relative;
-      cursor: pointer;
-    }
-    .toggle-circle {
-      width: 20px;
-      height: 20px;
-      background: white;
-      border-radius: 50%;
-      position: absolute;
-      top: 2.5px;
-      left: 3px;
-      transition: left 0.3s;
-    }
-    body.dark .toggle-circle {
-      left: 27px;
-    }
-
-    /* Mobile Menu */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-    }
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: var(--gold);
-    }@media(max-width:768px){
-  nav {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: var(--light-bg);
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    border-radius: 8px 0 0 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: max-height 0.4s ease, padding 0.1s ease;
-  }
-  body.dark nav {
-    background: var(--dark-bg);
-  }
-  nav.active {
-    max-height: 500px; /* cukup besar supaya semua link muat */
-    padding: 15px;
-  }
-  nav a {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-  }
-  .menu-toggle {
-    display: flex;
-  }
-}/* Logo */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo {
-  height: 65px;
-  width: auto;
-}
-
-
-    /* Sections */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      max-width: 1200px;
-      margin: auto;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--gold);
-    }
-
-    .hero {
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin: 15px 0 25px;
-    }
-    .btn {
-      background: var(--gold);
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #b9972d;
-    }
-
-    /* Grid & Card */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 20px;
-    }
-    .card {
-      background: rgba(0,0,0,0.03);
-      border-radius: 12px;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-    body.dark .card {
-      background: rgba(255,255,255,0.05);
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Testimonials */
-    .testimonial-container {
-      position: relative;
-    }
-    .testimonial-grid {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 20px;
-      padding-bottom: 15px;
-      -webkit-overflow-scrolling: touch;
-    }
-    .testimonial {
-      flex: 0 0 85%;
-      max-width: 400px;
-      background: rgba(0,0,0,0.05);
-      padding: 20px;
-      border-radius: 12px;
-      scroll-snap-align: start;
-      margin: auto;
-    }
-    body.dark .testimonial {
-      background: rgba(255,255,255,0.08);
-    }
-    .testimonial p {
-      font-style: italic;
-    }
-    .testimonial span {
-      display: block;
-      margin-top: 10px;
-      font-weight: 500;
-      color: var(--gold);
-    }
-    .dots {
-      text-align: center;
-      margin-top: 15px;
-    }
-    .dot {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      background: #ccc;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    .dot.active {
-      background: var(--gold);
-    }
-
-    /* Contact */
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-    }
-    body.dark input, body.dark textarea {
-      background: #222;
-      color: #eee;
-      border: 1px solid #555;
-    }
-
-    footer {
-      padding: 20px;
-      text-align: center;
-      background: var(--gold);
-      color: #fff;
-    }
-  </style>
-</head>
-<body><header>
-  <div class="logo-container">
-    <img src="assets/logo.jpg" alt="PT Lancar Barokah Manfaat Logo" class="logo">
-  </div>
-  <div class="controls">
-    <nav id="navbar">
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#why">Why Us</a>
-      <a href="#process">Process</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="toggle" id="toggleTheme"><div class="toggle-circle"></div></div>
-    <div class="menu-toggle" id="menuToggle">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</header>
-
-  
-
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Bringing Indonesia’s Best Agriculture to the World</h1>
-    <p>We export premium coffee, cloves, charcoal briquettes, and more — trusted by global buyers.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>PT Lancar Barokah Manfaat is an Indonesian export company specializing in high-quality agricultural commodities and processed products. With a commitment to excellence, we ensure every shipment meets international standards and arrives on time.</p>
-  </section>
-
-  <!-- Products -->
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="grid">
-      <div class="card"><h3>Coffee Beans</h3><p>Premium Arabica & Robusta sourced from Indonesia’s best farms.</p></div>
-      <div class="card"><h3>Cloves</h3><p>Hand-picked cloves with rich aroma and flavor, perfect for global markets.</p></div>
-      <div class="card"><h3>Charcoal Briquettes</h3><p>Eco-friendly coconut shell charcoal briquettes for BBQ & shisha.</p></div>
-      <div class="card"><h3>Other Products</h3><p>We also export nutmeg, spices, and other agricultural commodities.</p></div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section id="why">
-    <h2>Why Choose Us</h2>
-    <div class="grid">
-      <div class="card"><h3>Trusted Quality</h3><p>Strict quality control ensures products meet global standards.</p></div>
-      <div class="card"><h3>Reliable Shipping</h3><p>Strong logistics network with on-time delivery guarantee.</p></div>
-      <div class="card"><h3>Global Network</h3><p>Serving buyers across Asia, Middle East, Europe, and beyond.</p></div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process">
-    <h2>Our Process</h2>
-    <div class="grid">
-      <div class="card"><h3>1. Sourcing</h3><p>Partnering with local farmers & producers for the finest raw materials.</p></div>
-      <div class="card"><h3>2. Quality Control</h3><p>Every batch inspected and certified before shipping.</p></div>
-      <div class="card"><h3>3. Export</h3><p>Efficient documentation and logistics to deliver worldwide.</p></div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial-container">
-      <div class="testimonial-grid" id="testimonialGrid">
-        <div class="testimonial">
-          <p>"Coffee beans were excellent quality. Packaging was secure and shipment was on time."</p>
-          <span>- Importer, Germany</span>
-        </div>
-        <div class="testimonial">
-          <p>"Cloves shipment exceeded expectations. Highly recommended partner."</p>
-          <span>- Trader, India</span>
-        </div>
-        <div class="testimonial">
-          <p>"Charcoal briquettes burn long and clean. Our customers are very satisfied."</p>
-          <span>- Distributor, Middle East</span>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="PT LBM Logo" class="brand-logo" />
+        <div class="brand-meta">
+          <h1 class="brand-title">PT Lancar Barokah Manfaat</h1>
+          <!-- <span class="brand-tag">Indonesia Exporter</span> -->
         </div>
       </div>
-      <div class="dots" id="dots"></div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to do business? Get in touch with us today.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p style="margin-top:20px;">📍 Pekalongan, Indonesia | ✉️ info@ptlancarbarokahmanfaat.com | 📱 +62 812 3456 7890</p>
-  </section>
+      <nav class="main-nav" id="navbar">
+        <a href="#about" data-i18n="nav.about">Tentang</a>
+        <a href="#products" data-i18n="nav.products">Produk</a>
+        <a href="#why" data-i18n="nav.why">Mengapa Kami</a>
+        <a href="#process" data-i18n="nav.process">Proses</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">Testimoni</a>
+        <a href="#contact" data-i18n="nav.contact">Kontak</a>
+      </nav>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 PT Lancar Barokah Manfaat. All rights reserved.</p>
-  </footer>
+      <div class="header-actions">
+        <select
+          id="languageSwitcher"
+          aria-label="Language switcher"
+          class="lang-select"
+        >
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-  <script>
-    // Theme toggle
-    document.getElementById('toggleTheme')
-      .addEventListener('click', ()=> document.body.classList.toggle('dark'));
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h1 class="hero-title" data-i18n="hero.title">
+          Suplayer Kopi Terpercaya Pilihan Anda
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Kami mengekspor kopi premium, cengkeh, briket arang kelapa, dan
+          lainnya — dipercaya oleh pembeli global.
+        </p>
+        <a
+          href="#contact"
+          class="btn btn-primary"
+          data-i18n="cta.contact"
+          style="text-decoration: none"
+          >Hubungi Kami</a
+        >
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
 
-    // Mobile menu
-    const menuToggle = document.getElementById('menuToggle');
-    const navbar = document.getElementById('navbar');
-    menuToggle.addEventListener('click', ()=> navbar.classList.toggle('active'));
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="about.title">Tentang Kami</h2>
+        <p class="section-lead" data-i18n="about.text">
+          PT Lancar Barokah Manfaat adalah perusahaan ekspor Indonesia yang
+          mengkhususkan diri dalam komoditas pertanian berkualitas tinggi dan
+          produk olahan.
+        </p>
+      </div>
+      <!-- <div class="about-grid">
+        <div class="about-card shadow">
+          <img src="assets/about-1.jpg" alt="Quality control" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.0.title">Kualitas Ketat</h3>
+            <p class="muted" data-i18n="about.cards.0.desc">
+              Setiap batch diperiksa dan memenuhi standar internasional.
+            </p>
+          </div>
+        </div>
+        <div class="about-card shadow">
+          <img src="assets/about-2.jpg" alt="Sourcing" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.1.title">Sumber Tepercaya</h3>
+            <p class="muted" data-i18n="about.cards.1.desc">
+              Kemitraan langsung dengan petani & produsen lokal terbaik.
+            </p>
+          </div>
+        </div>
+        <div class="about-card shadow">
+          <img src="assets/about-3.jpg" alt="Logistics" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.2.title">Logistik Andal</h3>
+            <p class="muted" data-i18n="about.cards.2.desc">
+              Dokumentasi ekspor efisien dan pengiriman tepat waktu.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </section>
 
-    // Testimonials slider dots
-    const grid = document.getElementById('testimonialGrid');
-    const dots = document.getElementById('dots');
-    const items = grid.children;
-    for (let i=0; i<items.length; i++){
-      let dot=document.createElement('span');
-      dot.classList.add('dot');
-      if(i===0) dot.classList.add('active');
-      dots.appendChild(dot);
-    }
-    const dotEls = dots.querySelectorAll('.dot');
-    grid.addEventListener('scroll', ()=>{
-      let index=Math.round(grid.scrollLeft/grid.clientWidth);
-      dotEls.forEach((d,i)=> d.classList.toggle('active',i===index));
-    });
-  </script>
-</body>
+    <!-- Products -->
+    <section id="products" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="products.title">Produk Kami</h2>
+        <!-- <p class="section-lead" data-i18n="products.subtitle">
+          Komoditas unggulan untuk pasar global
+        </p> -->
+      </div>
+      <div class="grid" id="productsGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="why.title">
+          Mengapa Memilih Kami
+        </h2>
+        <!-- <p class="section-lead" data-i18n="why.subtitle">
+          Alasan Klien Mempercayai PT LBM
+        </p> -->
+      </div>
+      <div class="grid" id="whyGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="process.title">Proses Kami</h2>
+        <!-- <p class="section-lead" data-i18n="process.subtitle">
+          Transparan dari hulu ke hilir
+        </p> -->
+      </div>
+      <div class="grid" id="processGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="testimonials.title">Testimoni</h2>
+        <p class="section-lead" data-i18n="testimonials.subtitle">
+          Apa kata mitra & pembeli kami
+        </p>
+      </div>
+
+      <div class="slider shadow" aria-roledescription="carousel">
+        <button class="arrow prev" id="prev" aria-label="Previous">◀</button>
+        <div class="slides" id="slides"></div>
+        <button class="arrow next" id="next" aria-label="Next">▶</button>
+      </div>
+      <div class="dots" id="dots" aria-label="slider pagination"></div>
+    </section>
+
+    <!-- Contact + Map -->
+    <section id="contact" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="contact.title">Hubungi Kami</h2>
+        <p class="section-lead" data-i18n="contact.text">
+          Siap berbisnis? Hubungi kami hari ini.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form shadow" novalidate>
+        <div class="field">
+          <label for="name" data-i18n="contact.form.nameLabel">Nama</label>
+          <input
+            type="text"
+            id="name"
+            required
+            data-i18n-placeholder="contact.form.name"
+            placeholder="Nama Anda"
+          />
+        </div>
+        <div class="field">
+          <label for="email" data-i18n="contact.form.emailLabel">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            data-i18n-placeholder="contact.form.email"
+            placeholder="Email Anda"
+          />
+        </div>
+        <div class="field">
+          <label for="message" data-i18n="contact.form.messageLabel"
+            >Pesan</label
+          >
+          <textarea
+            rows="4"
+            id="message"
+            data-i18n-placeholder="contact.form.message"
+            placeholder="Pesan Anda"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          data-i18n="contact.form.submit"
+        >
+          Kirim Pesan
+        </button>
+        <p
+          class="form-status"
+          id="formStatus"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+
+      <div class="map-head">
+        <h3 data-i18n="map.title">Negara Konsumen Kopi Kami</h3>
+        <p class="muted" data-i18n="map.subtitle">
+          Rute pengiriman ditandai garis merah dari Indonesia
+        </p>
+      </div>
+      <div
+        id="map"
+        class="map shadow"
+        role="application"
+        aria-label="Consumer countries map"
+      ></div>
+
+      <p class="contact-meta muted" style="text-align: center">
+        📍 Pekalongan, Indonesia — ✉️ info@ptlancarbarokahmanfaat.com — 📱 +62
+        877-1777-2773
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.text">
+        © 2025 PT Lancar Barokah Manfaat. Hak cipta dilindungi.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js" defer></script>
+  </body>
 </html>

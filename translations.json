@@ -1,0 +1,288 @@
+{
+  "id": {
+    "nav": {
+      "about": "Tentang",
+      "products": "Produk",
+      "why": "Mengapa Kami",
+      "process": "Proses",
+      "testimonials": "Testimoni",
+      "contact": "Kontak"
+    },
+    "hero": {
+      "kicker": "Ekspor • Kopi • Rempah",
+      "title": "Suplayer Kopi Terpercaya Pilihan Anda",
+      "subtitle": "Kami mengekspor kopi premium, cengkeh, dan briket arang kelapa — dipercaya oleh pembeli global."
+    },
+    "cta": {
+      "contact": "Hubungi Kami"
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "text": "PT Lancar Barokah Manfaat adalah perusahaan ekspor Indonesia yang mengkhususkan diri pada komoditas pertanian berkualitas tinggi dan produk olahan. Dengan komitmen terhadap keunggulan, kami memastikan setiap pengiriman memenuhi standar internasional dan tiba tepat waktu.",
+      "cards": [
+        {
+          "title": "Kualitas Ketat",
+          "desc": "Setiap batch diperiksa dan memenuhi standar internasional."
+        },
+        {
+          "title": "Sumber Tepercaya",
+          "desc": "Kemitraan langsung dengan petani & produsen lokal terbaik."
+        },
+        {
+          "title": "Logistik Andal",
+          "desc": "Dokumentasi ekspor efisien dan pengiriman tepat waktu."
+        }
+      ]
+    },
+    "products": {
+      "title": "Produk Kami",
+      "subtitle": "Komoditas unggulan untuk pasar global",
+      "list": [
+        {
+          "name": "Biji Kopi (Arabika & Robusta)",
+          "desc": "Dipetik dari perkebunan terbaik Indonesia, cocok untuk roastery & importers.",
+          "image": "assets/coffee.jpg"
+        },
+        {
+          "name": "Cengkeh",
+          "desc": "Aroma kuat dan kualitas prima untuk industri makanan & farmasi.",
+          "image": "assets/cloves.jpg"
+        },
+        {
+          "name": "Briket Arang Kelapa",
+          "desc": "Rendah abu, panas stabil — ideal untuk BBQ & shisha.",
+          "image": "assets/charcoal.jpg"
+        },
+        {
+          "name": "Produk Unggulan Lainnya",
+          "desc": "Kami juga mengekspor komoditas pertanian dan produk olahan dari hasil pertanian.",
+          "image": "assets/spices.jpg"
+        }
+      ]
+    },
+    "why": {
+      "title": "Mengapa Memilih Kami",
+      "subtitle": "Alasan Klien Mempercayai PT LBM",
+      "list": [
+        {
+          "title": "Kualitas Terpercaya",
+          "desc": "Kontrol kualitas yang ketat memastikan produk memenuhi standar global."
+        },
+        {
+          "title": "Pengiriman Andal",
+          "desc": "Jaringan logistik yang kuat dengan jaminan pengiriman tepat waktu."
+        },
+        {
+          "title": "Jaringan Global",
+          "desc": "Melayani pembeli di seluruh Asia, Timur Tengah, Eropa, dan seterusnya."
+        }
+      ]
+    },
+    "process": {
+      "title": "Proses Kami",
+      "subtitle": "Transparan dari hulu ke hilir",
+      "steps": [
+        {
+          "title": "Sourcing",
+          "desc": "Kolaborasi dengan petani & produsen tersertifikasi."
+        },
+        {
+          "title": "Quality Control",
+          "desc": "Sampling, grading, dan pengujian laboratorium bila diperlukan."
+        },
+        {
+          "title": "Packaging",
+          "desc": "Kemasan food-grade sesuai tujuan & spesifikasi buyer."
+        },
+        {
+          "title": "Export",
+          "desc": "Dokumen lengkap (COO, invoice, packing list, sertifikat) & tracking."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Testimoni",
+      "subtitle": "Apa kata mitra & pembeli kami",
+      "list": [
+        {
+          "name": "Importer",
+          "country": "Jerman",
+          "quote": "Biji kopi sangat bagus, kemasan aman dan tepat waktu."
+        },
+        {
+          "name": "Trader",
+          "country": "India",
+          "quote": "Cengkeh melampaui ekspektasi. Rekomendasi kuat."
+        },
+        {
+          "name": "Distributor",
+          "country": "Timur Tengah",
+          "quote": "Briket menyala lama dan bersih. Pelanggan puas."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "text": "Siap berbisnis? Hubungi kami hari ini.",
+      "form": {
+        "nameLabel": "Nama",
+        "emailLabel": "Email",
+        "messageLabel": "Pesan",
+        "name": "Nama Anda",
+        "email": "Email Anda",
+        "message": "Pesan Anda",
+        "submit": "Kirim Pesan"
+      }
+    },
+    "map": {
+      "title": "Negara Konsumen Kopi Kami",
+      "subtitle": "Rute pengiriman ditandai garis merah dari Indonesia"
+    },
+    "footer": {
+      "text": "© 2025 PT Lancar Barokah Manfaat. Hak cipta dilindungi."
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About",
+      "products": "Products",
+      "why": "Why Us",
+      "process": "Process",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "hero": {
+      "kicker": "Export • Coffee • Spices",
+      "title": "Your Trusted Coffee Supplier of Choice",
+      "subtitle": "We export premium coffee, cloves, and coconut charcoal briquettes — trusted by global buyers."
+    },
+    "cta": {
+      "contact": "Get in Touch"
+    },
+    "about": {
+      "title": "About Us",
+      "text": "PT Lancar Barokah Manfaat is an Indonesian export company specializing in high-quality agricultural commodities and processed products. With a commitment to excellence, we ensure every shipment meets international standards and arrives on time.",
+      "cards": [
+        {
+          "title": "Strict Quality",
+          "desc": "Every batch inspected to meet international standards."
+        },
+        {
+          "title": "Trusted Sourcing",
+          "desc": "Direct partnerships with top local farmers & producers."
+        },
+        {
+          "title": "Reliable Logistics",
+          "desc": "Efficient export documentation and timely shipments."
+        }
+      ]
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Flagship commodities for global markets",
+      "list": [
+        {
+          "name": "Coffee Beans (Arabica & Robusta)",
+          "desc": "Sourced from Indonesia’s finest estates; ideal for roasteries & importers.",
+          "image": "assets/coffee.jpg"
+        },
+        {
+          "name": "Cloves",
+          "desc": "Rich aroma and prime quality for food & pharma industries.",
+          "image": "assets/cloves.jpg"
+        },
+        {
+          "name": "Coconut Charcoal Briquettes",
+          "desc": "Low ash, steady heat — perfect for BBQ & shisha.",
+          "image": "assets/charcoal.jpg"
+        },
+        {
+          "name": "Specialty Products",
+          "desc": "We also export agricultural commodities and processed products derived from agricultural produce.",
+          "image": "assets/spices.jpg"
+        }
+      ]
+    },
+    "why": {
+      "title": "Why Choose Us",
+      "subtitle": "Reasons clients trust PT LBM",
+      "list": [
+        {
+          "title": "Trusted Quality",
+          "desc": "Strict quality control ensures products meet global standards."
+        },
+        {
+          "title": "Reliable Shipping",
+          "desc": "Strong logistics network with on-time delivery guarantee."
+        },
+        {
+          "title": "Global Network",
+          "desc": "Serving buyers across Asia, Middle East, Europe, and beyond."
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "Transparent from farm to port",
+      "steps": [
+        {
+          "title": "Sourcing",
+          "desc": "Collaborating with certified farmers & producers."
+        },
+        {
+          "title": "Quality Control",
+          "desc": "Sampling, grading, and lab tests when required."
+        },
+        {
+          "title": "Packaging",
+          "desc": "Food-grade packaging tailored to destination & buyer specs."
+        },
+        {
+          "title": "Export",
+          "desc": "Full documents (COO, invoice, packing list, certificates) & tracking."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "subtitle": "What our partners & buyers say",
+      "list": [
+        {
+          "name": "Importer",
+          "country": "Germany",
+          "quote": "Coffee beans were excellent, secure packing and on time."
+        },
+        {
+          "name": "Trader",
+          "country": "India",
+          "quote": "Cloves exceeded expectations. Strongly recommended."
+        },
+        {
+          "name": "Distributor",
+          "country": "Middle East",
+          "quote": "Briquettes burn long and clean. Customers are happy."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "text": "Ready to do business? Reach out today.",
+      "form": {
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "messageLabel": "Message",
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message",
+        "submit": "Send Message"
+      }
+    },
+    "map": {
+      "title": "Our Coffee Consumer Countries",
+      "subtitle": "Shipping routes shown in red from Indonesia"
+    },
+    "footer": {
+      "text": "© 2025 PT Lancar Barokah Manfaat. All rights reserved."
+    }
+  }
+}
