@@ -286,6 +286,9 @@ body {
   .container {
     padding: 0 16px;
   }
+  .section {
+    padding: 30px 0;
+  }
 }
 
 /* Cards common */
