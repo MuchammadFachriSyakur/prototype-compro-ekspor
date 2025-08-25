@@ -81,24 +81,24 @@
     "process": {
       "title": "Proses Kami",
       "subtitle": "Transparan dari hulu ke hilir",
-      "steps": [
-        {
-          "title": "Sourcing",
-          "desc": "Kolaborasi dengan petani & produsen tersertifikasi."
-        },
-        {
-          "title": "Quality Control",
-          "desc": "Sampling, grading, dan pengujian laboratorium bila diperlukan."
-        },
-        {
-          "title": "Packaging",
-          "desc": "Kemasan food-grade sesuai tujuan & spesifikasi buyer."
-        },
-        {
-          "title": "Export",
-          "desc": "Dokumen lengkap (COO, invoice, packing list, sertifikat) & tracking."
-        }
-      ]
+      "steps": [ 
+  {
+    "title": "Sumber Bahan",
+    "desc": "Kolaborasi dengan petani & produsen tersertifikasi."
+  },
+  {
+    "title": "Kontrol Kualitas",
+    "desc": "Sampling, grading, dan pengujian laboratorium bila diperlukan."
+  },
+  {
+    "title": "Pengemasan",
+    "desc": "Kemasan food-grade sesuai tujuan & spesifikasi buyer."
+  },
+  {
+    "title": "Ekspor",
+    "desc": "Dokumen lengkap (COO, invoice, packing list, sertifikat) & tracking."
+  } 
+]
     },
     "testimonials": {
       "title": "Testimoni",
@@ -286,3 +286,4 @@
     }
   }
 }
+
