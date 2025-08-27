@@ -81,24 +81,24 @@
     "process": {
       "title": "Proses Kami",
       "subtitle": "Transparan dari hulu ke hilir",
-      "steps": [ 
-  {
-    "title": "Sumber Bahan",
-    "desc": "Kolaborasi dengan petani & produsen tersertifikasi."
-  },
-  {
-    "title": "Kontrol Kualitas",
-    "desc": "Sampling, grading, dan pengujian laboratorium bila diperlukan."
-  },
-  {
-    "title": "Pengemasan",
-    "desc": "Kemasan food-grade sesuai tujuan & spesifikasi buyer."
-  },
-  {
-    "title": "Ekspor",
-    "desc": "Dokumen lengkap (COO, invoice, packing list, sertifikat) & tracking."
-  } 
-]
+      "steps": [
+        {
+          "title": "Penyedia",
+          "desc": "Bekerja sama langsung dengan petani dan produsen yang sudah tersertifikasi."
+        },
+        {
+          "title": "Kontrol Kualitas",
+          "desc": "Melakukan pengecekan, penyortiran, dan tes lab bila dibutuhkan."
+        },
+        {
+          "title": "Pengemasan",
+          "desc": "Menggunakan kemasan food-grade sesuai permintaan dan spesifikasi pembeli."
+        },
+        {
+          "title": "Ekspor",
+          "desc": "Menyiapkan semua dokumen penting (COO, faktur, daftar kemasan, sertifikat) lengkap dengan fitur pelacakan."
+        }
+      ]
     },
     "testimonials": {
       "title": "Testimoni",
@@ -153,7 +153,7 @@
     },
     "hero": {
       "kicker": "Export • Coffee • Spices",
-      "title": "Your Trusted Coffee Supplier of Choice",
+      "title": "Your Trusted Coffee Suplayer of Choice",
       "subtitle": "We export premium coffee, cloves, and coconut charcoal briquettes — trusted by global buyers."
     },
     "cta": {
@@ -227,19 +227,19 @@
       "steps": [
         {
           "title": "Sourcing",
-          "desc": "Collaborating with certified farmers & producers."
+          "desc": "Working directly with certified farmers and producers."
         },
         {
           "title": "Quality Control",
-          "desc": "Sampling, grading, and lab tests when required."
+          "desc": "Conducting inspections, sorting, and lab tests when needed."
         },
         {
           "title": "Packaging",
-          "desc": "Food-grade packaging tailored to destination & buyer specs."
+          "desc": "Using food-grade packaging tailored to buyer requests and specifications."
         },
         {
           "title": "Export",
-          "desc": "Full documents (COO, invoice, packing list, certificates) & tracking."
+          "desc": "Preparing all essential documents (COO, invoice, packing list, certificates) along with tracking features."
         }
       ]
     },
@@ -286,4 +286,3 @@
     }
   }
 }
-
